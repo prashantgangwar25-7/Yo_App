@@ -7,4 +7,4 @@ It helps you converse with people who have registered on the App. It has Registe
 Built with the help of **React**, **Node.js**, **Express**, **Socket.io**, **REST APIs**, **MongoDB**.
 
 ## Hosted
-https://yo-0i0b.onrender.com
+https://yo-prashant-gangwar.onrender.com/
