@@ -1,6 +1,7 @@
 // export const host = "https://yo-prashant-gangwar.herokuapp.com";//heroku link
 // export const host = "http://localhost:5000";//heroku link
-export const host = "https://yo-prashant-gangwar.onrender.com";//render link
+// export const host = "https://yo-prashant-gangwar.onrender.com";//render link
+export const host = "https://yo-prashant-gangwar.vercel.app/";//vercel link
 export const loginRoute = `${host}/api/auth/login`;
 export const registerRoute = `${host}/api/auth/register`;
 export const logoutRoute = `${host}/api/auth/logout`;
