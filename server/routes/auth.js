@@ -1,3 +1,5 @@
+const { jwtAuthMiddleware, generateToken } = require("../middlewares/jwtMiddleware");
+
 const {
   login,
   register,

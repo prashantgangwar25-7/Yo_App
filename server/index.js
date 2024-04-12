@@ -5,11 +5,13 @@ const authRoutes = require("./routes/auth");
 const messageRoutes = require("./routes/messages");
 const app = express();
 const socket = require("socket.io");
+const cookieParser = require("cookie-parser");
 require("dotenv").config();
-const path = require("path");//
+const path = require("path");
 
 app.use(cors());
 app.use(express.json());//to accept json data
+app.use(cookieParser());
 
 mongoose
   .connect(process.env.MONGO_URL, {
@@ -37,7 +39,7 @@ if (process.env.NODE_ENV === "production") {
   );
 } else {
   app.get("/", (req, res) => {
-    res.send("API is running..");
+    res.send("API is running...");
   });
 }
 //Deployment
@@ -47,7 +49,8 @@ const server = app.listen(process.env.PORT, () =>
 );
 const io = socket(server, {
   cors: {
-    origin: "http://localhost:3000",
+    // origin: "http://localhost:3000",
+    origin: "*",
     // credentials: true,
   },
 });
